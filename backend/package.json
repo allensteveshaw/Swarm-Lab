@@ -1,0 +1,43 @@
+{
+  "name": "agent-wechat-backend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --webpack -H 127.0.0.1 -p 3017",
+    "dev:win": "next dev --webpack -H 127.0.0.1 -p 3017",
+    "build": "next build --webpack",
+    "start": "next start -H 127.0.0.1 -p 3017",
+    "lint": "eslint",
+    "init-db:win": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:3017/api/admin/init-db'\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.23.0",
+    "@streamdown/code": "^1.0.1",
+    "@streamdown/mermaid": "^1.0.1",
+    "drizzle-orm": "^0.45.1",
+    "framer-motion": "^11.2.10",
+    "lucide-react": "^0.469.0",
+    "mermaid": "^11.12.2",
+    "next": "^16.1.6",
+    "postgres": "^3.4.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "recharts": "^3.7.0",
+    "redis": "^4.7.0",
+    "streamdown": "^2.1.0",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "mcpServers": {
+        "tavily": {
+            "description": "Tavily Search - Advanced web search and content analysis",
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "tavily-mcp@0.2.3"
+            ],
+            "env": {
+                "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY"
+            },
+            "disabled": false
+        },
+        "chrome-devtools": {
+            "description": "Chrome DevTools - Browser automation and web scraping",
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "chrome-devtools-mcp@latest",
+                "--browserUrl=http://127.0.0.1:9222"
+            ],
+            "disabled": true
+        }
+    }
+}
