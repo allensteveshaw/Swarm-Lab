@@ -1,5 +1,9 @@
 # 🐝 Swarm Lab — 多智能体实验平台
 
+<p align="center">
+  <img src="assets/fengmian.jpg" alt="Swarm Lab" width="360" />
+</p>
+
 **开源的多 AI Agent 实验与协作平台** — 在浏览器中构建、编排、观察和博弈 AI 蜂群。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
